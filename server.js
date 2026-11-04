@@ -230,7 +230,7 @@ app.post('/api/logout', (request, response) => {
   response.status(204).end()
 })
 
-const isProduction = process.env.NODE_ENV === 'production' || process.env.VERCEL === '1'
+const isProduction = process.env.NODE_ENV === 'production'
 if (isProduction) {
   const buildDirectory = path.join(appDirectory, 'dist')
   app.use(express.static(buildDirectory))
