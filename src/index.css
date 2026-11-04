@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap');
+
+:root {
+  --paper: #f2ede3;
+  --sky: #dcecf3;
+  --purple: #a98bc9;
+  --ink: #20211d;
+  --rust: #b1573a;
+  --clay: #c99470;
+  --muted: #77736b;
+  --line: #d5cdc0;
+  --sans: 'DM Sans', sans-serif;
+  --display: 'Playfair Display', serif;
+  font: 16px/1.45 var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
