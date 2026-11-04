@@ -8,7 +8,7 @@ function Dashboard({ user, onSignOut, signingOut, message }) {
         </a>
         <nav className="dashboard-nav" aria-label="Dashboard">
           <a href="#overview">Overview</a>
-          <a href="#account">My account</a>
+          <a href="#account">My Account</a>
         </nav>
         <button className="dashboard-sign-out" type="button" onClick={onSignOut} disabled={signingOut}>
           {signingOut ? 'Signing out...' : 'Sign out'}
