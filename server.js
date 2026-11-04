@@ -8,7 +8,6 @@ import cookie from 'cookie'
 import express from 'express'
 import { OAuth2Client } from 'google-auth-library'
 import { EncryptJWT, jwtDecrypt } from 'jose'
-import { createServer as createViteServer } from 'vite'
 
 const port = Number(process.env.PORT || 5173)
 const appOrigin = process.env.APP_ORIGIN || `http://localhost:${port}`
@@ -240,6 +239,7 @@ if (isProduction) {
     response.sendFile(path.join(buildDirectory, 'index.html'))
   })
 } else {
+  const { createServer: createViteServer } = await import('vite')
   const vite = await createViteServer({
     configFile: path.join(appDirectory, 'vite.config.js'),
     server: { middlewareMode: true },
