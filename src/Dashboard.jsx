@@ -47,7 +47,7 @@ function Dashboard({ user, onSignOut, signingOut, message }) {
             <div className="dashboard-empty">
               <span className="dashboard-empty-mark" aria-hidden="true">+</span>
               <h3>A fresh start.</h3>
-              <p>Your dashboard is ready. Saved rituals and other member features are not available yet.</p>
+              <p>Your dashboard is ready. Member features are not available yet.</p>
             </div>
           </section>
         </div>
